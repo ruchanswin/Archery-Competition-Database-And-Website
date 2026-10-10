@@ -1,0 +1,12 @@
+<%- include("partials/header", { title: "Recorder" }) %>
+<h1>Recorder</h1>
+<p class="text-muted">Competition and archer records are available through the database API.</p>
+<div class="card card-body col-md-6">
+  <h2 class="h5">Available API endpoints</h2>
+  <ul class="mb-0">
+    <li><code>GET /api/competitions</code></li>
+    <li><code>GET /api/archers</code></li>
+    <li><code>GET /api/archers/:archerId?competitionId=:competitionId</code></li>
+  </ul>
+</div>
+<%- include("partials/footer") %>

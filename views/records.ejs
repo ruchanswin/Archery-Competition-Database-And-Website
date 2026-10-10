@@ -1,0 +1,29 @@
+<%- include("partials/header", { title: "Record Archer Points" }) %>
+<h1>Record Archer Points</h1>
+<p class="text-muted">Choose an input type to see the available options.</p>
+<form class="card card-body col-md-6">
+  <div class="mb-3">
+    <label class="form-label" for="inputType">Input type</label>
+    <select class="form-select" id="inputType">
+      <option value="">Choose an input type</option>
+      <option value="choose1">Input 1</option>
+      <option value="choose2">Input 2</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="inputOption">Option</label>
+    <select class="form-select" id="inputOption" disabled>
+      <option value="">Choose an input type first</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="recordPassword">Password</label>
+    <input class="form-control" type="password" id="recordPassword" autocomplete="current-password">
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" id="recordConfirm">
+    <label class="form-check-label" for="recordConfirm">Confirm selection</label>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+<%- include("partials/footer") %>
